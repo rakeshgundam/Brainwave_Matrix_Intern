@@ -176,7 +176,7 @@
     <div class="todo-input">
       <input type="text" id="todo-input" placeholder="Task Name...">
       <input type="text" id="game-input" placeholder="Favorite Game...">
-      <input type="datetime-local" id="location-input" placeholder="Location...">
+      <input type="datetime-local" id="location-input" placeholder="date...">
       <button onclick="addItem()">Add </button>
     </div>
     <ul class="todo-list" id="todo-list"></ul>
@@ -199,7 +199,7 @@
 
         const todoText = document.createElement('p');
         todoText.className = 'todo-text';
-        todoText.textContent = `Task: ${task}, Game: ${game}, Location: ${location}`;
+        todoText.textContent = `Task: ${task}, Game: ${game}, Date: ${location}`;
 
         const deleteButton = document.createElement('button');
         deleteButton.textContent = 'Delete';
